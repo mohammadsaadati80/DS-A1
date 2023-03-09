@@ -3,8 +3,11 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"math"
 	"os"
+	"strconv"
 	"strings"
+	"unicode"
 )
 
 func isEndCharacter(character uint8) bool {
@@ -31,8 +34,6 @@ func fixCapitalization(inputLine string) string {
 			}
 		} else {
 			outputLine += string(inputLine[i])
-		}
-		if !isEnd {
 			isEnd = isEndCharacter(inputLine[i])
 		}
 	}
@@ -40,25 +41,39 @@ func fixCapitalization(inputLine string) string {
 	return outputLine
 }
 
+func ordinal(n int) string {
+	var suffix string
+	suffix = ""
+
+	if 11 <= (n%100) && (n%100) <= 13 {
+		suffix = "th"
+	} else {
+		a := [5]string{"th", "st", "nd", "rd", "th"}
+		suffix = a[int(math.Min(float64(int((n%10))), 4))]
+	}
+
+	return suffix
+}
+
 func fixOrdinalNumbers(inputLine string) string {
 	var outputLine string
 	outputLine = ""
+	var digit string
+	digit = ""
 
-	outputLine = inputLine
+	for i := 0; i < len(inputLine); i++ {
+		if unicode.IsDigit(rune(inputLine[i])) {
+			digit += string(inputLine[i])
+		}
 
-	//outputLine = strings.ReplaceAll(outputLine, fmt.Sprintf("%d", 1), "1st")
-	//outputLine = strings.ReplaceAll(outputLine, fmt.Sprintf("%d", 2), "2nd")
-	//outputLine = strings.ReplaceAll(outputLine, fmt.Sprintf("%d", 3), "3rd")
-	//for i := 4; i <= 20; i++ {
-	//	//outputLine = strings.ReplaceAll(outputLine, fmt.Sprintf("%d", i), fmt.Sprintf("%dth", i))
-	//	outputLine = strings.ReplaceAll(outputLine, fmt.Sprintf("%d", i), fmt.Sprintf("%dth", i))
-	//}
-	//outputLine = strings.ReplaceAll(outputLine, "21ST", "21ST")
-	//outputLine = strings.ReplaceAll(outputLine, "22ND", "22ND")
-	//outputLine = strings.ReplaceAll(outputLine, "23RD", "23RD")
-	//for i := 24; i <= 30; i++ {
-	//	outputLine = strings.ReplaceAll(outputLine, fmt.Sprintf("%dTH", i), fmt.Sprintf("%dTH", i))
-	//}
+		outputLine += string(inputLine[i])
+
+		if digit != "" && !unicode.IsDigit(rune(inputLine[i+1])) {
+			mark, _ := strconv.Atoi(digit)
+			outputLine += ordinal(mark)
+			digit = ""
+		}
+	}
 
 	return outputLine
 }
@@ -73,11 +88,8 @@ func fixInputLine(inputLine string) string {
 }
 
 func main() {
-	//var inputLine string
 	var outputLine string
 
-	//fmt.Print("Enter your input:\n ")
-	//fmt.Scanf("%s", &inputLine)
 	reader := bufio.NewReader(os.Stdin)
 	fmt.Print("Enter a string: ")
 	inputLine, _ := reader.ReadString('\n')

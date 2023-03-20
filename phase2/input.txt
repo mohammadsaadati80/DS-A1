@@ -1,0 +1,50 @@
+this is my 1 attempt to write a go program. hello world!1 ?
+ this is my 2 attempt to write a go program. hello world!a ?
+ this  is my 3 attempt to write a go program. hello world! 2 ?
+this  is my 4 attempt to write a go program . hello world! a ?
+ this is my5attempt to write a go program. hello world!3 ?
+this is my 8 attempt to write a go program. hello world! a ?
+this  is my 9 attempt to write a go program. hello world! 4 ?
+ this is my 10  attempt to write a go program. hello world! 4 a ?
+this is my  11 attempt to  write a go program.  hello world! 9 ?
+this is my12attempt to write a go program. hello world!a ?
+this is my 13 attempt to write a go program. hello world! 10?
+this is my 14  attempt  to write  a  go program  . hello world! a ?
+ this is my15 attempt to write a go  program  .hello  world!11 ?
+this is my 18 attempt to write a go program. hello world! 4 a ?
+this is my  19attempt to write a go program. hello world!12 ?
+ this  is my  20 attempt to write a go program. hello world! a  ?
+  this is  my 21  attempt to write a go program. hello world!13?
+    this is my 22 attempt to write a go program. hello world! a ?
+this is my 23 attempt to write a go program. hello world! 14 ?
+this is my 24 attempt to write a go program.hello  world!a ?
+         this  is my  25 attempt  to write a go program. hello  world! 2a ?
+this  is my 28 attempt to write a go program. hello world! a ?
+ this  is my 29 attempt to write a go program. hello  world! 21 b?
+this  is my 99 attempt to write a go program. hello world!a?
+this  is my  100 attempt to write a go program. hello world! a ?
+this is my 101 attempt to write a go program. hello world   !1 ?
+ this is my 102 attempt to write a go program   . hello world!a ?
+ this  is my 103 attempt to write a go program  . hello world  ! 2 a?
+this  is my 104 attempt to write a go program. hello world  ! 1 a ?
+ this is my105attempt to write a go program. hello world!3 ?
+this is my 108 attempt to write a go program. hello world! a ?
+this  is my 109 attempt to write a go program. hello world! 4 ?
+ this is my 110  attempt to write a go program. hello world! a ?
+this is my  211 attempt to  write a go program.  hello world! 9 ?
+this is my112attempt to write a go program. hello world!a ?
+this is my 113 attempt to write a go program. hello world! 10?
+this is my 214  attempt  to write  a  go program. hello world! a ?
+ this is my115 attempt to write a go  program. hello  world!11 ?
+this is my 118 attempt to write a go program. hello world!  a ?
+this is my  119attempt to write a go program. hello world!12 ?
+ this  is my  120 attempt to write a go program. hello world! a  ?
+  this is  my 221  attempt to write a go program. hello world!13?
+    this is my 422 attempt to write a go program. hello world! a ?
+this is my 523 attempt to write a go program. hello world! 14 ?
+this is my 624 attempt to write a go program.hello  world!a ?
+this  is my  725 attempt  to write a go program. hello  world! 2a ?
+this  is my 528 attempt to write a go program. hello world! 5 a ?
+ this  is my 629 attempt to write a go program. hello  world! 21?
+this  is my 799 attempt to write a go program. hello world!a?
+this  is my  900 attempt to write a go program. hello world! a ?
